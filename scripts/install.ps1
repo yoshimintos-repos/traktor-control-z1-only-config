@@ -92,4 +92,7 @@ foreach ($rel in $files) {
 Write-Host ''
 Write-Host "Fertig: $($files.Count) Dateien angepasst. Sicherung der Originale: $BackupDir" -ForegroundColor Green
 Write-Host 'Jetzt Traktor starten.'
+Write-Host ''
+# Hinweis auf doppelte/alte Z1-Layouts im Controller Manager (liest nur)
+try { & (Join-Path $PSScriptRoot 'check_layout.ps1') -NoPause } catch { Write-Host "Layout-Pruefung uebersprungen: $_" }
 Done 0

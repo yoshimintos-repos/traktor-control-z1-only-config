@@ -57,6 +57,14 @@ Import: Traktor → Preferences → Controller Manager → „Add…“ → „I
 
 **Eigenes Layout?** Damit der Mod deine Shift-Taste erkennt, muss im Controller Manager bei der Zeile, die die Filter-Taste zu Shift macht, **„Override factory map“ aus** sein. Dasselbe gilt für alle Zeilen, die nur mit Shift aktiv sind und deren Taste leuchten soll.
 
+## Probleme?
+
+**Loop-Taste setzt immer 4 Beats:** In Version 6 und älter ein Fehler im Mod, behoben in Version 7. Einfach den Installer erneut ausführen.
+
+**Shift-Funktionen spinnen oder Aktionen passieren doppelt:** Doppelklick auf **`Layout pruefen.bat`** zeigt alle Z1-MK2-Einträge im Controller Manager. Das Skript liest nur und ändert nichts. Einträge mit Port „None“ sind inaktiv und schaden nicht. Stören können nur mehrere Einträge **mit** zugewiesenem Gerät, oder ein Layout mit alten Loop-Zeilen. Entfernen: Controller Manager → Eintrag bei „Device“ wählen → „Edit…“ → „Remove“.
+
+**Controller wird nach der Installation nicht erkannt:** `Deinstallieren.bat` ausführen und ein Issue mit der Traktor-Version aufmachen.
+
 ## Deinstallation
 
 Doppelklick auf **`Deinstallieren.bat`**. Die gesicherten Originale kommen zurück (Sicherung unter `C:\ProgramData\Z1MK2-Loop-Mod\backup`).

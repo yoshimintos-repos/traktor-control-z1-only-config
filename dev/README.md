@@ -20,3 +20,5 @@ Die Änderungen liegen in `patches/patches.json` als Paare „suchen → ersetze
 - In den CSI-Dateien (nur `import CSI 1.0`) gibt es kein `Component.onCompleted`. Damit lädt das ganze Mapping nicht, und der Controller wird nicht erkannt.
 - Soft Takeover: Der Ausgang des eingebauten `SoftTakeover`-Moduls kann per `ValuePropertyAdapter` auf eine eigene `MappingPropertyDescriptor` (Float, min 0, max 1) zeigen. Die Loop Size wird daraus abgeleitet und zurückgespiegelt.
 - „Override factory map“ im Controller Manager blockiert den QML-Teil einer Taste, solange die Zeile aktiv ist.
+- `SetPropertyAdapter.value` wird von Traktor offenbar nur einmal gelesen. Ein Binding wie `value: loopSizeProp.value` bleibt auf dem Wert beim Laden stehen (bei der Loop Size meist 7 = 4 Beats). Für veränderliche Werte deshalb mehrere Adapter mit festen Werten anlegen und per `enabled` umschalten (`enabled`-Bindings werden live ausgewertet). NI macht es überall so.
+- `Layout pruefen.bat`: Ein Eintrag im Controller Manager ist nur aktiv, wenn ihm ein Port zugewiesen ist (`DDPT` im TSI, „None“ = inaktiv).

@@ -1,0 +1,4 @@
+originals/
+build/
+__pycache__/
+*.bak
