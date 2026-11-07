@@ -25,10 +25,9 @@ Ein Mod für den **Native Instruments Traktor Kontrol Z1 MK2**. Der Gain-Knopf s
 | Filter (Shift) | weiß | immer an: gedimmt = bereit, hell = gedrückt |
 | Loop-Tasten | grün | hell = Loop läuft |
 | FX 1 / FX 2 | blau | Sync Deck A / B, hell = Sync an ¹ |
-| Stems-Taste links | weiß | Only Browser, hell = an ¹ |
-| Mode | orange | Browser-Modus ¹ |
+| Stems-Taste links | weiß | Only Browser + Browser-Modus, hell = an ¹ |
 | Channel-FX-On | weiß | Sprung an den Track-Anfang ¹ |
-| EQ rechts, FX 3, FX 4 | aus | haben keine Shift-Belegung |
+| EQ rechts, FX 3, FX 4, Mode | aus | haben keine Shift-Belegung |
 
 ¹ Die Funktion selbst kommt aus dem Begleit-Layout (siehe unten). Der Mod sorgt für die Farben.
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 8
+- Begleit-Layout korrigiert: Der Browser-Modus (Modifier 3) wurde mit Shift + Mode eingeschaltet und mit Shift + Stems-Taste links ausgeschaltet. Jetzt schaltet Shift + Stems-Taste links ihn an und aus, zusammen mit „Only Browser“. Die Mode-Taste (die auch in den MIDI-Mode schaltet) hat mit Shift keine Funktion mehr.
+- Mod: Die Mode-Taste ist mit Shift aus (vorher orange für den Browser-Modus) und wechselt mit Shift auch nicht die Decks.
+
 ## Version 7
 - Behoben: Die Loop-Taste setzte nach dem ersten Loop immer einen 4-Beat-Loop, auch wenn eine andere Loop Size eingestellt war (z. B. Loop gesetzt, im Loop auf 8 vergrößert, beendet, neu gesetzt → wieder 4). Ursache: Traktor übernimmt den Wert eines `SetPropertyAdapter` offenbar nur einmal beim Laden und ignoriert spätere Änderungen des Bindings (NI verwendet dort ausschließlich feste Werte). Jetzt gibt es pro Loop-Größe einen Adapter mit festem Wert, von dem nur der zur aktuellen Loop Size passende aktiv ist.
 - `Layout pruefen.bat`: Einträge ohne zugewiesenes Gerät (Port „None“) gelten jetzt als inaktiv und werden nicht mehr als Problem gemeldet.
